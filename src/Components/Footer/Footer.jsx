@@ -10,7 +10,9 @@ const Footer = () => {
     <div className="footer">
       <img src={Wave} alt="" style={{ width: "100%" }} />
       <div className="f-content">
-        <span>shubhamsoni7125@gmail.com</span>
+        <a href="mailto:shubhamsoni7125@gmail.com?subject=Subject%20of%20Email&body=Body%20of%20Email">
+          shubhamsoni7125@gmail.com
+        </a>
         <div className="f-icons">
           <a href="https://www.instagram.com/mr_._soni?igsh=OGdqOTM4OG95Z2w2">
             <Insta color="white" size="3rem" />
