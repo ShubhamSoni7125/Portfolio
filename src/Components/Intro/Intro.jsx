@@ -34,9 +34,12 @@ const Intro = () => {
           </span>
         </div>
 
-        <Link to="contact-form" spy={true} smooth={true}>
-          <button className="button i-button">Hire me</button>
-        </Link>
+        <div className="i-button-container">
+          <Link to="contact-form" spy={true} smooth={true}>
+            <button className="button i-button">Hire me</button>
+          </Link>
+        </div>
+
         <div className="i-icons">
           <a href="https://github.com/ShubhamSoni7125">
             <img src={GitHub} alt="" />
@@ -50,8 +53,8 @@ const Intro = () => {
         </div>
       </div>
       <div className="i-right">
-        <img src={Vector1} alt="" />
-        <img src={Vector2} alt="" />
+        <img src={Vector1} alt="" id="Vector1" />
+        <img src={Vector2} alt="" id="Vector2" />
         <img src={boy} alt="" />
         <motion.img
           initial={{ left: "-36%" }}
@@ -71,9 +74,9 @@ const Intro = () => {
         </motion.div>
         <motion.div
           initial={{ left: "9rem", top: "18rem" }}
-          whileInView={{ left: "0rem" }}
+          whileInView={{ left: "2.4rem" }}
           transition={transition}
-          style={{ top: "18rem", left: "0rem" }}
+          style={{ top: "18rem", left: "2.4rem" }}
           className="floating-div"
         >
           <FloatingDiv image={thumbup} txt1="One of the" txt2="Best Designs" />

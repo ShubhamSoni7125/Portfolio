@@ -36,9 +36,15 @@
   margin-top: 10px;
 }
 
-.i-button {
+.i-button-container {
   width: 6rem;
   height: 2rem;
+}
+
+.i-button {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .i-icons {
@@ -100,16 +106,33 @@
   left: 56%;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .intro {
     flex-direction: column;
-    gap: 7rem;
+    gap: 5rem;
     height: 64rem;
+    margin-top: 3rem;
+    margin-bottom: -8rem;
+  }
+
+  .i-left {
+    margin-bottom: -10rem;
+  }
+
+  .i-icons {
+    margin-top: 1rem;
   }
 
   .i-right {
-    transform: scale(0.8);
+    transform: scale(0.7);
     left: -3rem;
+  }
+
+  .i-right > :nth-child(1) {
+    left: -30%;
+  }
+  .i-right > :nth-child(2) {
+    left: -42%;
   }
   .i-right .blur {
     display: none;
@@ -117,5 +140,48 @@
   .floating-div:nth-of-type(1) {
     /* display: none; */
     top: -7rem !important;
+    left: 13rem !important;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .intro {
+    flex-direction: column;
+    height: 64rem;
+    margin-top: 3rem;
+    margin-bottom: -8rem;
+  }
+
+  .i-left {
+    margin-bottom: -2rem;
+  }
+  .i-icons {
+    margin-top: 0;
+  }
+  .i-right {
+    left: -2.5rem;
+  }
+  .floating-div:nth-of-type(1) {
+    top: -7rem !important;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 1023px) {
+  .intro {
+    height: 60rem;
+    margin-top: 3rem;
+    margin-bottom: -8rem;
+  }
+  .i-left {
+    margin-bottom: -2rem;
+  }
+  .i-icons {
+    margin-top: 0;
+  }
+  .i-right {
+    left: 2rem;
+  }
+  .floating-div:nth-of-type(2) {
+    top: 18.4rem !important;
   }
 }

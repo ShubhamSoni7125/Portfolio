@@ -26,9 +26,13 @@ const Services = () => {
           <br />
           ispum is simpley dummy text of printing
         </span>
-        <a href={Resume} download>
-          <button className="button s-button">Download CV</button>
-        </a>
+
+        <div className="s-button-container">
+          <a href={Resume} download>
+            <button className="button s-button">Download CV</button>
+          </a>
+        </div>
+
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
 
@@ -72,9 +76,7 @@ const Services = () => {
           <Card
             emoji={Humble}
             heading={"UI/UX"}
-            detail={
-              "Detail realted to UI/UX. Add some more nad more extra text to it."
-            }
+            detail={"Detail realted to UI/UX. Add some more text to it."}
           />
         </motion.div>
 

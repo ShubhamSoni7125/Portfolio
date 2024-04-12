@@ -4,7 +4,7 @@
   height: 90vh;
   margin-bottom: 8rem;
   margin-top: 9rem;
-  margin-bottom: 13rem;
+  margin-bottom: 12rem;
 }
 
 .awesome {
@@ -55,12 +55,12 @@
   top: 8rem;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .services {
     margin-top: 0;
     flex-direction: column;
     gap: 5rem;
-    height: 66rem;
+    height: 60rem;
     padding: 0;
   }
 
@@ -75,5 +75,62 @@
 
   .blur {
     display: none;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .services {
+    margin-top: 4rem;
+    flex-direction: column;
+    gap: 5rem;
+    height: 50rem;
+    padding: 0;
+    margin-bottom: 10rem;
+  }
+
+  .cards > :nth-child(1) {
+    left: 12rem !important;
+  }
+  .cards > :nth-child(2) {
+    left: -2.5rem !important;
+  }
+  .cards > :nth-child(3) {
+    left: 12rem !important;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 961px) {
+  .cards > :nth-child(1) {
+    left: 19rem !important;
+  }
+  .cards > :nth-child(2) {
+    left: 0rem !important;
+
+  }
+  .cards > :nth-child(3) {
+    left: 16rem !important;
+
+  }
+}
+
+@media screen and (min-width: 962px) and (max-width: 1023px) and (orientation: landscape) {
+  .services {
+    margin-top: 4rem;
+    flex-direction: column;
+    gap: 5rem;
+    height: 50rem;
+    padding: 0;
+    margin-bottom: 10rem;
+  }
+
+  .cards > :nth-child(1) {
+    position: absolute;
+    left: 25rem !important;
+  }
+  .cards > :nth-child(2) {
+    left: 2rem !important;
+  }
+  .cards > :nth-child(3) {
+    left: 22rem !important;
   }
 }
